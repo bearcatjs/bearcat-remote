@@ -1,0 +1,14 @@
+{
+	"name": "bearcat-remote",
+	"beans": [{
+		"id": "dnodeDynamicProxy",
+		"func": "lib.remote.dnode.dnodeDynamicProxy",
+		"init": "dyInit",
+		"async": true,
+		"destroy": "dyDestroy"
+	}, {
+		"id": "dnodeServiceExporter",
+		"func": "lib.remote.dnode.dnodeServiceExporter",
+		"init": "init"
+	}]
+}

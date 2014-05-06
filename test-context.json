@@ -1,0 +1,37 @@
+{
+	"name": "bearcat-remote",
+	"beans": [{
+		"id": "dnodeClient",
+		"func": "lib-cov.remote.dnode.dnodeDynamicProxy",
+		"init": "dyInit",
+		"async": true,
+		"destroy": "dyDestroy",
+		"props": [{
+			"name": "serviceHost",
+			"value": "localhost"
+		}, {
+			"name": "servicePort",
+			"value": 8003
+		}, {
+			"name": "serviceInterface",
+			"value": ["remotePing"]
+		}]
+	}, {
+		"id": "dnodeServiceExporter",
+		"func": "lib-cov.remote.dnode.dnodeServiceExporter",
+		"init": "init",
+		"props": [{
+			"name": "service",
+			"ref": "bearcatDnodeRemoteService"
+		}, {
+			"name": "port",
+			"value": 8003
+		}, {
+			"name": "host",
+			"value": "localhost"
+		}]
+	}, {
+		"id": "bearcatDnodeRemoteService",
+		"func": "test.remote.dnode.bearcatDnodeRemoteService"
+	}]
+}

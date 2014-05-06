@@ -1,0 +1,32 @@
+{
+  "name": "bearcat-remote",
+  "version": "0.1.0",
+  "description": "bearcat remote",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "keywords": [
+    "bearcat",
+    "remote",
+    "rpc"
+  ],
+  "dependencies": {
+    "pomelo-logger": "0.1.x",
+    "dnode": "1.2.x"
+  },
+  "author": "fantasyni",
+  "license": "MIT",
+  "devDependencies": {
+    "should": ">=0.0.1",
+    "mocha": ">=0.0.1",
+    "jscoverage": "0.3.3",
+    "muk": ">=0.0.1",
+    "grunt": "~0.4.2",
+    "grunt-mocha-test": "0.8.x",
+    "grunt-jscoverage": "0.0.3",
+    "grunt-contrib-clean": "0.5.x",
+    "grunt-contrib-jshint": "~0.8.0",
+    "bearcat": "~0.1.x"
+  }
+}
